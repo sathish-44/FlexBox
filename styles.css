@@ -6,8 +6,8 @@ body {
     border: 6px solid black;
     display: flex; /*BLOACK-LEVEL : flex / INLINE-LEVEL : inline-flex  */
 /*  flex-direction: column; /*row, row-reverse, column, column-reverse */
-    height: 800px;
-    flex-wrap: wrap;  /*nowrap, wrap, wrap-reverse*/
+    height: 400px;
+/*    flex-wrap: wrap;  /*nowrap, wrap, wrap-reverse*/
 /*  flex-flow: row wrap; /*SHORT HAND FOR FLEX DIRECTION & FLEX WRAP*/
 /*  justify-content: space-around; /*flex-start,flex-end,center,space-between,space-around,space-evenly*/
 /*  align-items: baseline; */
@@ -19,33 +19,47 @@ body {
     font-size: 1.5rem;
     padding: 1rem;
     text-align: center;
+    /* align-self: flex-end; */
+    /* flex-grow: 2;
+    flex-shrink: 5;
+    flex-basis: 200px; */
+    /* flex: 2 5 200px; /* SHORT HAND FOR flex grow,flex shrink & basis */
 }
 
 .item-1 {
     background-color: #B4Bf35;
+    /* flex-basis: 200px; */
     /* padding-bottom: 3rem; */
+    align-self: flex-start;
 }
 
 .item-2 {
     background-color:tomato;
     /* padding-bottom: 5rem; */
+    align-self: flex-end;
 }
 
 .item-3 {
     background-color:violet;
+    /* order: 1; */
     /* font-size: 3rem; */
+    align-self: center;
 }
 
 .item-4 {
     background-color:yellowgreen;
+    align-self: stretch;
 }
 
 .item-5 {
     background-color:steelblue;
+    /* flex-grow: 1; */
 }
 
 .item-6 {
     background-color:tan;
+    /* flex-grow: .5; */
+    /* order: 2; */
 }
 
 .item-7 {
